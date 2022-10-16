@@ -7,6 +7,11 @@
  * Return: Always 0 (Success)
  */
 int main (void){
-	putchar("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n");
+	char n;
+	for (n = 'a'; n <= 'Z' n++)
+	{
+		putchar(n);
+	}
+	putchar('\n');
 	return 0;
 }
