@@ -6,19 +6,14 @@
  * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char n;
-
-	for (n = 0; n < 10; n++)
-	{
-		putchar((n % 10) + '0');
-	}
-	for (n = 'a'; n <= 'f'; n++)
-	{
-		putchar(n);
-	}
-	putchar('\n');
-	return (0);
+	char i;
+	
+	for (i = 'z'; i >= 'a'; i--)
+    	{
+        	putchar(i);
+    	}
+    	putchar('\n');
+    	return (0);
 }
