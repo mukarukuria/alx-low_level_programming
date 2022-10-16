@@ -9,7 +9,11 @@
 
 int main(void)
 {
-	char n = "abcdefghijklmnopqrstuvwxyz";
-	putchar("%d\n", n);
+	char n;
+	for (n = 'a'; n <= 'z'; n++)
+	{
+		putchar(n);
+	}
+	putchar("\n");
 	return 0;
 }
