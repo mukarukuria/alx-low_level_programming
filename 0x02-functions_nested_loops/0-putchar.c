@@ -2,7 +2,7 @@
 
 /**
  * * main - Entry point
- * Description: function to print _putchar
+ * Description: function to print exactly _putchar
  * Return: Always 0 (Success)
  */
 
