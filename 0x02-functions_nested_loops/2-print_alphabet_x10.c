@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Entry point
- * Description: Prints alphabets in small letters with a new line at the end
+ * print_alphabet_x10 - Prints the whole alphabet in lowercase 10 times 	
  */
+
 void print_alphabet_x10(void)
 {
 	int x = 0;
+	char c;
 	while (x < 10)
 	{
-		for (char a = 'a'; a <= 'z'; a++)
-			_putchar(a);
+		for (c = 'a'; c <= 'z'; c++)
+			_putchar(c);
 		_putchar('\n');
-		x++;
 	}
 }
