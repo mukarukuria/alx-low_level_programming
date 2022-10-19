@@ -22,5 +22,6 @@ int main(void)
 			break;
 		printf(", ");
 	}
+	printf("\n");
 	return (0);
 }
