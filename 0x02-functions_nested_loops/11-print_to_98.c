@@ -2,7 +2,7 @@
 
 /**
  * print_to_98 - Prints numbers to 98
- * @n: Start integer to 98 
+ * @n : Starting integer to get to 98
  */
 
 void print_to_98(int n)
