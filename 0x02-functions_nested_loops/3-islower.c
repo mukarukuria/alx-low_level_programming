@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _islower - Entry point
  * Description: Determines whether a char is lowercase.
  * Return: Always 0 (Success)
  */
