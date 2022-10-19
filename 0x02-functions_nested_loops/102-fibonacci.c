@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	int n = 0, sum;
-	unsigned long fib1 = 0, fib2 = 1;
+	int n = 0;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
 	while (n < 50)
 	{
