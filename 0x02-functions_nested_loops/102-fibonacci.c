@@ -8,12 +8,13 @@
 
 int main(void)
 {
-	int n = 0, fib1 = 0, fib2 = 1, sum;
+	int n = 0;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
 	while (n < 50)
 	{
 		sum = fib1 + fib2;
-		printf("%d", sum);
+		printf("%lu", sum);
 		fib1 = fib2;
 		fib2 = sum;
 		n++;
@@ -21,5 +22,6 @@ int main(void)
 			break;
 		printf(", ");
 	}
+	printf("\n");
 	return (0);
 }
