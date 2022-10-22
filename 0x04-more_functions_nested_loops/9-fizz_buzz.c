@@ -8,32 +8,27 @@
 
 int main(void)
 {
-	int c;
+	int num;
 
-	for (c = 1; c <= 100; c++)
+	for (num = 1; num <= 100; num++)
 	{
-		if (c % 3 == 0 && c % 5 == 0)
-		{
-			printf("FizzBuzz ");
+		if ((num % 3) == 0 && (num % 5) == 0)
+			printf("FizzBuzz");
+
+		else if ((num % 3) == 0)
+			printf("Fizz");
+
+		else if ((num % 5) == 0)
+			printf("Buzz");
+
+		else
+			printf("%d", num);
+
+		if (num == 100)
 			continue;
-		}
-		else if (c % 3 == 0)
-		{
-			printf("Fizz ");
-			continue;
-		}
-		else if (c % 5 == 0)
-		{
-			printf("Buzz ");
-			continue;
-		}
-		printf("%d", c);
-		if (c == 100)
-		{
-			break;
-		}
 		printf(" ");
 	}
+
 	printf("\n");
 	return (0);
 }
