@@ -23,7 +23,7 @@ void print_triangle(int size)
 			{
 				_putchar('#');
 			}
-			if (hash == size)
+			if (tri == size)
 			{
 				continue;
 			}

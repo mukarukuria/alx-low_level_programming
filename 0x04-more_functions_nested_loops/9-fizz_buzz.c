@@ -9,6 +9,7 @@
 int main(void)
 {
 	int c;
+
 	for (c = 1; c <= 100; c++)
 	{
 		if (c % 3 == 0 && c % 5 == 0)
@@ -26,11 +27,12 @@ int main(void)
 			printf("Buzz ");
 			continue;
 		}
-		printf("%d ", c);
+		printf("%d", c);
 		if (c == 100)
 		{
 			break;
 		}
+		printf(" ");
 	}
 	printf("\n");
 	return (0);

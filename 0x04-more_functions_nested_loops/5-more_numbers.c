@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * more_numbers - Prints numbers 1 to 14 ten times
  *
- * Return: Always 0.
+ * Return: void
  */
 
 void more_numbers(void)
