@@ -23,10 +23,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		char *str = va_arg(ls, char*);
 
-		if (str == NULL || strcmp(str, "") == 0)
-			printf("(nil)");
-
-		printf("%s", str);
+		if (str == NULL)
+		{
+			printf("0");
+		} else
+		{
+			printf("%s", str);
+		}
 
 		if (i < n - 1)
 			printf("%s", separator);
