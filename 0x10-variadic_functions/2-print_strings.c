@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_string - prints stringd followed by a new line
+ * print_strings- prints stringd followed by a new line
  * @separator: string to be printedbetween the strings
  * @n: number of strings passed to the function
  *
@@ -16,13 +16,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(ls, n);
 
-	if(separator == NULL)
+	if (separator == NULL)
 		separator = "";
 
-	for(i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		char* str = va_arg(ls, char*);
-		
+		char *str = va_arg(ls, char*);
+
 		if (str == NULL || strcmp(str, "") == 0)
 			printf("(nil)");
 
