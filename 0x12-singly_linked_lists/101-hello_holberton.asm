@@ -1,18 +1,22 @@
-section .data
-
-hello:
-	db "Hello, Holberton", 10
+extern hello
 
 section .text
-global _start
+	global start
 
-_start:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, hello
-	mov rdx, 12
-	syscall
+start:
+	push rbp
 
-	mov rax, 60
-	xor rdi, rdi
-	syscall
+	mov rdi,fmt
+	mov rsi,msg
+	mov rax,0
+	call hello
+
+	pop rbp
+
+	mov rax,0
+	ret
+
+
+section .data
+	msm: db "Hello, Holberton", 0
+	fmt: db "%s", 10, 0
